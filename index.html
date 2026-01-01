@@ -1,13 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Redirecting…</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Processing Your Reward...</title>
 
-  <!-- Instant redirect for CPA tracking -->
-  <script>
-    window.location.replace("https://www.aplfb8trk.com/23483NHR/CJJ7BLZ/");
-  </script>
+<style>
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background:#f5f7fa;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+.box{
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  text-align:center;
+  max-width:400px;
+}
+h1{
+  font-size:22px;
+  margin-bottom:10px;
+}
+p{
+  font-size:14px;
+  color:#555;
+}
+.loader{
+  margin:20px auto;
+  border:6px solid #eee;
+  border-top:6px solid #4CAF50;
+  border-radius:50%;
+  width:50px;
+  height:50px;
+  animation:spin 1s linear infinite;
+}
+@keyframes spin{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+.note{
+  font-size:12px;
+  color:#888;
+  margin-top:10px;
+}
+</style>
 </head>
+
+<body>
+
+<div class="box">
+  <h1>Verifying Your Eligibility</h1>
+  <p>Please wait while we connect you to the reward page.</p>
+  <div class="loader"></div>
+  <p class="note">Do not close this page...</p>
+</div>
+
+<script>
+let human = false;
+
+// Human activity detect (desktop + mobile)
+["mousemove","touchstart","scroll","keydown"].forEach(evt => {
+  document.addEventListener(evt, () => human = true, { once: true });
+});
+
+// Auto redirect after delay (CPA-safe)
+setTimeout(function () {
+  if (human && document.hasFocus()) {
+    window.location.href = "https://smrturl.co/a/sf9ce48c1f2/17412?s1=";
+  }
+}, 3800);
+</script>
+
+</body>
+</html>
+
+
 
 
 
